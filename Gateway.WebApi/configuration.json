@@ -1,0 +1,263 @@
+{
+  "Routes": [
+    //admission
+    {
+      "DownstreamPathTemplate": "/api/Student/Admission",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44370
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Student/Admission",
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "Admission"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Student/GetById/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44370
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Student/GetById/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Admission"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Student/Delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44370
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Student/Delete/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "SwaggerKey": "Admission"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Student/GetAll",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44370
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Student/GetAll",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Admission"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Student/Update/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44370
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Student/Update/{id}",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "SwaggerKey": "Admission"
+    },
+    //attendance
+    {
+      "DownstreamPathTemplate": "/api/Attendance/NewAttendance",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Attendance/NewAttendance",
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "Attendance"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Attendance/GetAll",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Attendance/GetAll",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Attendance"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Attendance/GetById/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Attendance/GetById/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Attendance"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Attendance/Update/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Attendance/Update/{id}",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "SwaggerKey": "Attendance"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Attendance/Delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44371
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Attendance/Delete/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "SwaggerKey": "Attendance"
+    },
+
+    //Course
+    {
+      "DownstreamPathTemplate": "/api/Course/Add",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44372
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Course/Add",
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "Course"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Course/RegisterStudnet",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44372
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Course/RegisterStudnet",
+      "UpstreamHttpMethod": [ "POST" ],
+      "SwaggerKey": "Course"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Course/GetAll",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44372
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Course/GetAll",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Course"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Course/GetById/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44372
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Course/GetById/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Course"
+
+    },
+    {
+      "DownstreamPathTemplate": "/api/Course/Update/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44372
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Course/Update/{id}",
+      "UpstreamHttpMethod": [ "PUT" ],
+      "SwaggerKey": "Course"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Course/Delete/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44372
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Course/Delete/{id}",
+      "UpstreamHttpMethod": [ "DELETE" ],
+      "SwaggerKey": "Course"
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:44382"
+  },
+  "SwaggerEndPoints": [
+    {
+      "Key": "Admission",
+      "Config": [
+        {
+          "Name": "Admission API",
+          "Version": "v1",
+          "Url": "http://localhost:44370/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Attendance",
+      "Config": [
+        {
+          "Name": "StudentAttendance API",
+          "Version": "v1",
+          "Url": "http://localhost:44371/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Course",
+      "Config": [
+        {
+          "Name": "StudentCourse API",
+          "Version": "v1",
+          "Url": "http://localhost:44372/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ]
+
+}
