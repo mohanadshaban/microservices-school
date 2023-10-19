@@ -1,0 +1,161 @@
+/*----------Global css-------*/
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+}
+.container{
+    padding: 0 90px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*------form--------*/ 
+
+.father form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:10px 15px;
+    border-radius: 10px;
+    width:90%
+}
+.father form label{
+    font-size: 18px;
+    font-weight: bold;
+}
+input{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    outline: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+}
+button{
+    padding: 8px;
+    font-size: 18px;
+    margin: 14px 0;
+    background-color: rgb(114, 114, 172);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.7s background-color;
+}
+.father form button:hover{
+    background-color: rgb(146, 146, 196);
+}
+.father form p{
+    margin-top:-10px;
+    font-size:13px;
+    color: red;
+}
+/*media-query*/ 
+@media screen and (max-width : 890px) {
+    .father form{
+        width: 50%;
+    }
+}
+@media screen and (max-width : 572px) {
+    .father form{
+        width: 65%;
+    }
+}
+@media screen and (max-width : 430px) {
+    .father form{
+        width: 75%;
+    }
+    .father form label{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .father form p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width : 369px) {
+    .father form{
+        width: 75%;
+    }
+    .father form label{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .father form p{
+        font-size: 8px;
+    }
+}
+/*---------Login--------*/ 
+.login{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(231, 231, 238);
+}
+.login form{
+    background-color:rgb(203, 203, 218);
+    box-shadow:2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    width:400px;
+    padding: 15px;
+    border-radius: 10px;
+}
+form label{
+    font-size: 18px;
+    font-weight: bold;
+}
+input{
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    outline: 1px solid #ddd;
+    border-radius: 10px;
+    width: 90%;
+}
+button{
+    padding: 8px;
+    font-size: 18px;
+    margin: 14px 0;
+    background-color: rgb(114, 114, 172);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.7s background-color;
+    width: 95%;
+}
+/*Header*/ 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo span{
+    color: rgb(78, 78, 136);
+    font-weight: bolder;
+    font-size: 18px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+}
+nav ul .nav-item{
+    margin-right: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav-btn{
+    padding: 8px;
+    margin: 14px 4px;
+    background-color: rgb(114, 114, 172);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    transition: 0.7s background-color;
+    text-decoration: none;
+}

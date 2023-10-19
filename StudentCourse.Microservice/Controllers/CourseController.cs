@@ -42,7 +42,7 @@ namespace Course.Microservice.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllStudentsCourses()
         {
-            var Courses = await _context.StudentCourses.ToListAsync();
+            var Courses = await _context.StudentCourses.Include(w=>w.Course).ToListAsync();
             if (Courses == null) return NoContent();
             return Ok(Courses);
         }

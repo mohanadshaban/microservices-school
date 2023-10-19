@@ -184,6 +184,20 @@
 
     },
     {
+      "DownstreamPathTemplate": "/api/Course/GetAllStudentsCourses",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 44372
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Course/GetAllStudentsCourses",
+      "UpstreamHttpMethod": [ "GET" ],
+      "SwaggerKey": "Course"
+
+    },
+    {
       "DownstreamPathTemplate": "/api/Course/GetById/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [

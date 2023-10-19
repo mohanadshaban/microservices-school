@@ -28,8 +28,18 @@ namespace Gateway.WebApi
         {
             services.AddOcelot();
             services.AddMvcCore().AddApiExplorer();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                            builder =>
+                            {
+                                builder.AllowAnyHeader()
+                             .AllowAnyMethod()
+                             .SetIsOriginAllowed((host) => true)
+                              .AllowCredentials();
+                            });
+            });
 
-       
             #region Swagger
             services.AddSwaggerForOcelot(Configuration);
        
@@ -44,7 +54,9 @@ public async void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         app.UseDeveloperExceptionPage();
     }
     app.UseRouting();
-    app.UseEndpoints(endpoints =>
+            app.UseCors("CorsPolicy"); // above UseRouting
+
+            app.UseEndpoints(endpoints =>
     {
         endpoints.MapControllers();
     });
